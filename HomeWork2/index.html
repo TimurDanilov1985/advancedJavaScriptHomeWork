@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="main center">
+
+        <div class="products">
+
+        </div>
+
+        <div class="name">
+            <h1 class="name__text">Отзывы о наших товарах</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="container__reviews">
+                
+            </div>
+
+        </div>
+
+        <dialog class="dialog">
+            <div class="dialog__window">
+                <p class="dialog__window__product"></p>
+                <textarea class="dialog__window__input"></textarea>
+                <div class="dialog__window__buttons">
+                    <button id="send" class="products__card__button">Отправить отзыв</button>
+                    <button id="close" class="products__card__button">Отмена</button>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id = "dialog1" class="dialog">
+            <div class="dialog__window">
+                <p class="dialog__window__product">Количество символов отзыва должно быть не менее 50 и не более 500 символов</p>
+                <div class="dialog__window__buttons">
+                    <button id="close1" class="products__card__button">Продолжить</button>
+                </div>
+            </div>
+        </dialog>
+
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

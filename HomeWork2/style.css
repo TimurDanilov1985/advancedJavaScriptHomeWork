@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 580px);
+  padding-right: calc(50% - 580px);
+}
+
+.products {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.products__card {
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border: 2px solid yellowgreen;
+  border-radius: 5px;
+  text-align: center;
+  width: calc(33% - 40px);
+}
+.products__card__name {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 50px;
+  color: red;
+}
+.products__card__button {
+  padding: 10px 10px;
+  background: violet;
+  border-radius: 20px;
+  border: none;
+  width: 150px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.products__card__button:hover {
+  background: darkmagenta;
+}
+.products__card__button:active {
+  background: blue;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.name__text {
+  color: darkmagenta;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container__reviews {
+  width: 90%;
+  border: 2px solid yellowgreen;
+  border-radius: 5px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container__reviews__review__product {
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+}
+.container__reviews__review__text {
+  font-size: 20px;
+}
+
+.list__ol {
+  list-style-position: inside;
+}
+
+.dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 20px;
+}
+.dialog__window {
+  padding: 30px 30px;
+}
+.dialog__window__product {
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+}
+.dialog__window__input {
+  width: 500px;
+  height: 200px;
+  padding: 10px 10px;
+  font-size: 20px;
+  outline: none;
+  resize: none;
+  border: 2px solid yellowgreen;
+}
+.dialog__window__buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */
