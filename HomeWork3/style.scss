@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.products {
+
+    &__head {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+
+        &__name {
+            font-size: 40px;
+        }
+    }
+
+    &__instruction {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+
+        &__block {
+            position: relative;
+
+            &__item {
+                font-size: 25px;
+                cursor: pointer;
+            }
+
+            &__reviews {
+                display: none;
+                position: absolute;
+                z-index: 1;
+
+                &__ol {
+                    background: white;
+                    border: 2px solid red;
+                    border-radius: 5px;
+                    padding: 10px 10px;
+                    list-style-position: inside;
+
+                    &__item {
+                        color: green;
+                    }
+
+                    &__button {
+                        padding: 5px 5px;
+                        border: 2px solid blue;
+                        background: none;
+                        color: blue;
+                        font-size: 15px;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover {
+                            background: blue;
+                            color: white;
+                        }
+
+                        &:active {
+                            background: white;
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.review {
+    padding-top: 50px;
+
+    &__head {
+        display: flex;
+        justify-content: center;
+
+        &__text {
+            font-size: 30px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__name {
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    &__field {
+
+        &__input {
+            padding: 5px 10px;
+            font-size: 20px;
+            color: red;
+            outline: none;
+            border: 2px solid orange;
+            border-radius: 5px;
+            width: 300px;
+            font-family: "Ubuntu", sans-serif;
+        }
+    }
+
+    &__area {
+        padding-top: 30px;
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    &__textarea {
+
+        &__input {
+            width: 600px;
+            height: 100px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            resize: none;
+            outline: none;
+            padding: 10px 10px;
+            font-size: 20px;
+            font-family: "Ubuntu", sans-serif;
+        }
+    }
+}
+
+.dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 20px 20px;
+
+    &__block {
+        width: 500px;
+
+
+        &__text {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+
+            &__p {
+                font-size: 30px;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

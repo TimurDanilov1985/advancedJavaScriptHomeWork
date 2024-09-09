@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.products__head {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.products__head__name {
+  font-size: 40px;
+}
+.products__instruction {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.products__instruction__text {
+  font-size: 20px;
+}
+.products__list {
+  list-style-type: none;
+}
+.products__list__block {
+  position: relative;
+}
+.products__list__block__item {
+  font-size: 25px;
+  cursor: pointer;
+}
+.products__list__block__reviews {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.products__list__block__reviews__ol {
+  background: white;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 10px 10px;
+  list-style-position: inside;
+}
+.products__list__block__reviews__ol__item {
+  color: green;
+}
+.products__list__block__reviews__ol__button {
+  padding: 5px 5px;
+  border: 2px solid blue;
+  background: none;
+  color: blue;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.products__list__block__reviews__ol__button:hover {
+  background: blue;
+  color: white;
+}
+.products__list__block__reviews__ol__button:active {
+  background: white;
+  color: blue;
+}
+
+.review {
+  padding-top: 50px;
+}
+.review__head {
+  display: flex;
+  justify-content: center;
+}
+.review__head__text {
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+.review__name__text {
+  font-size: 20px;
+}
+.review__field__input {
+  padding: 5px 10px;
+  font-size: 20px;
+  color: red;
+  outline: none;
+  border: 2px solid orange;
+  border-radius: 5px;
+  width: 300px;
+  font-family: "Ubuntu", sans-serif;
+}
+.review__area {
+  padding-top: 30px;
+}
+.review__area__text {
+  font-size: 20px;
+}
+.review__textarea__input {
+  width: 600px;
+  height: 100px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid orange;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.dialog__block {
+  width: 500px;
+}
+.dialog__block__text {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.dialog__block__text__p {
+  font-size: 30px;
+}
+.dialog__block__buttons {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

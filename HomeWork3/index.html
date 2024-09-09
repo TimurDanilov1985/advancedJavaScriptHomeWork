@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main center">
+        <div class="products">
+            <div class="products__head">
+                <p class="products__head__name">Продукты о которых оставили отзывы</p>
+            </div>
+            <div class="products__instruction">
+                <p class="products__instruction__text">(кликните на название продукта, чтобы прочитать отзывы)</p>
+            </div>
+
+            <ul class="products__list">
+ 
+            </ul>
+        </div>
+
+        <div class="review">
+
+            <div class="review__head">
+                <p class="review__head__text">Оставьте отзыв о продукте</p>
+            </div>
+
+            <div class="review__name">
+                <p class="review__name__text">Введите название продукта</p>
+            </div>
+
+            <div class="review__field">
+                <input type="text" class="review__field__input">
+            </div>
+
+            <div class="review__area">
+                <p class="review__area__text">Введите отзыв о продукте</p>
+            </div>
+
+            <div class="review__textarea">
+                <textarea class="review__textarea__input"></textarea>
+            </div>
+
+            <div class="review__buttons">
+                <button id="addReview" class="products__list__block__reviews__ol__button">Добавить отзыв</button>
+            </div>
+
+            <dialog id="dialog" class="dialog">
+                <div class="dialog__block">
+                    <div class="dialog__block__text">
+                        <p class="dialog__block__text__p">Введите название продукта</p>
+                    </div>
+                    <div class="dialog__block__buttons">
+                        <button id="close" class="products__list__block__reviews__ol__button">Продожить</button>
+                    </div>
+                </div>
+            </dialog>
+
+            <dialog id="dialog1" class="dialog">
+                <div class="dialog__block">
+                    <div class="dialog__block__text">
+                        <p class="dialog__block__text__p">Отзыв успешно добавлен</p>
+                    </div>
+                    <div class="dialog__block__buttons">
+                        <button id="close" class="products__list__block__reviews__ol__button">Продожить</button>
+                    </div>
+                </div>
+            </dialog>
+
+            <dialog id="dialog2" class="dialog">
+                <div class="dialog__block">
+                    <div class="dialog__block__text">
+                        <p class="dialog__block__text__p">Введите текст в поле для отзыва</p>
+                    </div>
+                    <div class="dialog__block__buttons">
+                        <button id="close" class="products__list__block__reviews__ol__button">Продожить</button>
+                    </div>
+                </div>
+            </dialog>
+
+        </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
